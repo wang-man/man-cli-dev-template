@@ -1,6 +1,6 @@
 {
-  "name": "vue-admin-beautiful",
-  "version": "1.0.0",
+  "name": "<%= className %>",
+  "version": "<%= version %>",
   "author": "vue-admin-beautiful",
   "participants": [],
   "homepage": "https://chu1204505056.gitee.io/vue-admin-better",
