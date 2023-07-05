@@ -4,8 +4,8 @@
       <vab-query-form-right-panel :span="24">
         <el-form
           ref="form"
-          :model="queryForm"
           :inline="true"
+          :model="queryForm"
           @submit.native.prevent
         >
           <el-form-item>
@@ -14,8 +14,8 @@
           <el-form-item>
             <el-button
               icon="el-icon-search"
-              type="primary"
               native-type="submit"
+              type="primary"
               @click="handleQuery"
             >
               查询
@@ -28,11 +28,11 @@
       <el-col
         v-for="(item, index) in list"
         :key="index"
-        :xs="24"
-        :sm="8"
-        :md="8"
         :lg="8"
+        :md="8"
+        :sm="8"
         :xl="6"
+        :xs="24"
       >
         <el-card :body-style="{ padding: '0px' }" shadow="hover">
           <div class="goods-list-card-body">
@@ -41,7 +41,7 @@
               <el-tag v-if="item.status === 0" hit type="danger">缺货</el-tag>
             </div>
             <div class="goods-list-image-group">
-              <img :src="item.image" class="goods-list-image" />
+              <img class="goods-list-image" :src="item.image" />
             </div>
             <div class="goods-list-title">{{ item.title }}</div>
             <div class="goods-list-description">{{ item.description }}</div>

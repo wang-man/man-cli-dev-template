@@ -1,9 +1,11 @@
+<div style="filter: grayscale(100%)">
+
 简体中文 | [English](./README.en.md)
 
 <div align="center"><img width="200" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/logo/vab.png"/>
 <h1> vue-admin-better</h1>
 
-<p>春已至，万物始，愿所有美好纷沓而来！</p>
+<p>众志成城，攻坚克难，愿所有美好纷沓而来！</p>
 </div>
 
 [![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-beautiful)
@@ -32,25 +34,25 @@
 
 - [⚡️ vue3.x + vite + arco](https://vue-admin-beautiful.com/vue-admin-arco/)
 
-- [🚀 admin pro 演示地址（vue2.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-pro/)
+- [🚀 Vue Admin Pro 演示地址（vue2.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-pro/)
 
-- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-plus/)
+- [🚀 Vue Admin Plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-plus/)
 
-- [📌 pro 及 plus 购买地址 authorization](https://vue-admin-beautiful.com/authorization/)
+- [📌 Vue Admin Pro 及 Vue Admin Plus 购买地址](https://vue-admin-beautiful.com/authorization/)
+
+- [🚀 Vue Shop Vite 演示地址（vue3.x + vite 4.x 付费版本）](https://vue-admin-beautiful.com/shop-vite/)
+
+- [📌 Vue Shop Vite 购买地址](https://vue-admin-beautiful.com/authorization/shop-vite.html)
 
 - [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension)
 
 - [🌐 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-better?_from=gitee_search)
 
-<!-- ## 🌐 备份地址（支持 https 网站自动更新）
-
-- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-pro/)
-
-- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-plus/) -->
-
 ## 🍻 前端讨论 QQ 群
 
-- 请我们喝杯咖啡，打赏后联系 QQ 783963206 邀请您进入讨论群（由于用户数较多，如果您打赏后未通过好友请求，请联系商家），不管您请还是不请，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-better 基础版本、开发工具自动配置教程及项目开发文档。
+- 请我们喝杯咖啡，打赏后联系 QQ 783963206 邀请您进入讨论群（由于用户数较多，如果您打赏后未通过好友请求，请联系商家），不管您请还是不请，您都可以享受到开源的代码，感谢您的支持和信任，群内提供
+  vue-admin-better 基础版本、开发工具自动配置教程及项目开发文档。
+
 <table>
 <tr>
 <td>
@@ -76,7 +78,7 @@
 # 克隆项目
 git clone -b vue3.0-antdv https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 # 本地开发 启动项目
 npm run serve
 ```
@@ -87,7 +89,7 @@ npm run serve
 # 克隆项目
 git clone  https://github.com/chuzhixin/vue-admin-arco.git
 # 安装依赖
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 # 本地开发 启动项目
 npm run dev
 ```
@@ -98,7 +100,7 @@ npm run dev
 # 克隆项目
 git clone -b master https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 # 本地开发 启动项目
 npm run serve
 ```
@@ -182,6 +184,14 @@ npm run serve
 - 熟悉 Vue.js 技术栈，使用它开发过几个实际项目。
 - 对原理技术感兴趣，想进阶和提升的同学。
 
+## 🎨 Star
+
+[![Stargazers for vue-admin-better](https://reporoster.com/stars/chuzhixin/vue-admin-better)](https://github.com/chuzhixin/vue-admin-better/stargazers)
+
+## ✨ Fork
+
+[![Forkers repo roster for vue-admin-better](https://reporoster.com/forks/chuzhixin/vue-admin-better)](https://github.com/chuzhixin/vue-admin-better/network/members)
+
 ## 🎉 功能地图
 
 ![img](https://fastly.jsdelivr.net/gh/chuzhixin/image/vip/flow.drawio.png)
@@ -219,4 +229,6 @@ npm run serve
 
 ## 📄 商用注意事项
 
-此项目可免费用于商业用途，请遵守 MIT 协议并保留作者技术支持声明。
+此项目可免费用于商业用途，请遵守 MIT 协议并保留作者技术支持声明，当然如果不愿意保留可以删掉。
+
+</div>

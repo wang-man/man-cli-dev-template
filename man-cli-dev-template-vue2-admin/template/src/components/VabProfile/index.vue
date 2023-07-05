@@ -7,7 +7,7 @@
       <div class="border-left"></div>
     </div>
     <div class="card-content">
-      <el-image :src="avatar" class="avatar"></el-image>
+      <el-image class="avatar" :src="avatar"></el-image>
       <div class="username">{{ username }}</div>
       <div class="social-icons">
         <a

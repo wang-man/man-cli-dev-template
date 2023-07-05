@@ -1,7 +1,7 @@
 {
-  "name": "man-cli-dev-template-vue2-admin",
-  "version": "1.0.0",
-  "description": "",
+  "name": "man-cli-dev-template-vue-admin-better",
+  "version": "1.0.2",
+  "description": "man的脚手架安装的项目模板",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

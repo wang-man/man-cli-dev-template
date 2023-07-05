@@ -1,5 +1,5 @@
 /**
- * @author https://gitee.com/chu1204505056/vue-admin-better （不想保留author可删除）
+ * @author https://vue-admin-beautiful.com （不想保留author可删除）
  * @description cli配置
  */
 
@@ -16,8 +16,9 @@ const {
   providePlugin,
   build7z,
   donation,
+  imageCompression,
 } = require('./src/config')
-const { webpackBarName, webpackBanner, donationConsole } = require('zx-layouts')
+const { webpackBarName, webpackBanner, donationConsole } = require('layouts')
 
 if (donation) donationConsole()
 const { version, author } = require('./package.json')
@@ -28,8 +29,7 @@ const dayjs = require('dayjs')
 const date = dayjs().format('YYYY_M_D')
 const time = dayjs().format('YYYY-M-D HH:mm:ss')
 process.env.VUE_APP_TITLE = title || 'vue-admin-beautiful'
-process.env.VUE_APP_AUTHOR =
-  author || 'https://gitee.com/chu1204505056/vue-admin-better'
+process.env.VUE_APP_AUTHOR = author || 'https://vue-admin-beautiful.com'
 process.env.VUE_APP_UPDATE_TIME = time
 process.env.VUE_APP_VERSION = version
 
@@ -142,14 +142,15 @@ module.exports = {
         .plugin('banner')
         .use(Webpack.BannerPlugin, [`${webpackBanner}${time}`])
         .end()
-      config.module
-        .rule('images')
-        .use('image-webpack-loader')
-        .loader('image-webpack-loader')
-        .options({
-          bypassOnDebug: true,
-        })
-        .end()
+      if (imageCompression)
+        config.module
+          .rule('images')
+          .use('image-webpack-loader')
+          .loader('image-webpack-loader')
+          .options({
+            bypassOnDebug: true,
+          })
+          .end()
     })
 
     if (build7z) {
@@ -177,13 +178,9 @@ module.exports = {
   productionSourceMap: false,
   css: {
     requireModuleExtension: true,
-    sourceMap: true,
+    sourceMap: false,
     loaderOptions: {
       scss: {
-        /*sass-loader 8.0语法 */
-        //prependData: '@import "~@/styles/variables.scss";',
-
-        /*sass-loader 9.0写法，感谢github用户 shaonialife*/
         additionalData(content, loaderContext) {
           const { resourcePath, rootContext } = loaderContext
           const relativePath = path.relative(rootContext, resourcePath)

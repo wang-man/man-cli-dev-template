@@ -1,5 +1,5 @@
 /**
- * @author https://gitee.com/chu1204505056/vue-admin-better （不想保留author可删除）
+ * @author https://vue-admin-beautiful.com （不想保留author可删除）
  * @description .eslintrc.js
  */
 
@@ -16,6 +16,12 @@ module.exports = {
     'vue/multi-word-component-names': 'off',
     'vue/no-useless-template-attributes': 'off',
     'vue/no-reserved-component-names': 'off',
+    'vue/attributes-order': [
+      'warn',
+      {
+        alphabetical: true,
+      },
+    ],
   },
   parserOptions: {
     parser: 'babel-eslint',

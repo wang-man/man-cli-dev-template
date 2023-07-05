@@ -1,5 +1,5 @@
 /**
- * @author https://gitee.com/chu1204505056/vue-admin-better （不想保留author可删除）
+ * @author https://vue-admin-beautiful.com （不想保留author可删除）
  * @description router全局配置，如有必要可分文件抽离，其中asyncRoutes只有在intelligence模式下才会用到，vip文档中已提供路由的基础图标与小清新图标的配置方案，请仔细阅读
  */
 
@@ -156,12 +156,6 @@ export const asyncRoutes = [
         meta: { title: '树', permissions: ['admin'] },
       },
       {
-        path: 'verify',
-        name: 'Verify',
-        component: () => import('@/views/vab/verify/index'),
-        meta: { title: '验证码', permissions: ['admin'] },
-      },
-      {
         path: 'menu1',
         component: () => import('@/views/vab/nested/menu1/index'),
         name: 'Menu1',
@@ -191,38 +185,10 @@ export const asyncRoutes = [
         ],
       },
       {
-        path: 'magnifier',
-        name: 'Magnifier',
-        component: () => import('@/views/vab/magnifier/index'),
-        meta: { title: '放大镜', permissions: ['admin'] },
-      },
-      {
         path: 'loading',
         name: 'Loading',
         component: () => import('@/views/vab/loading/index'),
         meta: { title: 'loading', permissions: ['admin'] },
-      },
-      {
-        path: 'player',
-        name: 'Player',
-        component: () => import('@/views/vab/player/index'),
-        meta: { title: '视频播放器', permissions: ['admin'] },
-      },
-      {
-        path: 'markdownEditor',
-        name: 'MarkdownEditor',
-        component: () => import('@/views/vab/markdownEditor/index'),
-        meta: { title: 'markdown编辑器', permissions: ['admin'] },
-      },
-      {
-        path: 'editor',
-        name: 'Editor',
-        component: () => import('@/views/vab/editor/index'),
-        meta: {
-          title: '富文本编辑器',
-          permissions: ['admin'],
-          badge: 'New',
-        },
       },
       {
         path: 'backToTop',

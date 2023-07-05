@@ -15,13 +15,16 @@
       <br />
       <el-upload
         ref="upload"
+        accept="image/png, image/jpeg"
         :action="action"
         :auto-upload="false"
+        class="upload-content"
         :close-on-click-modal="false"
         :data="data"
         :file-list="fileList"
         :headers="headers"
         :limit="limit"
+        list-type="picture-card"
         :multiple="true"
         :name="name"
         :on-change="handleChange"
@@ -31,18 +34,15 @@
         :on-progress="handleProgress"
         :on-remove="handleRemove"
         :on-success="handleSuccess"
-        accept="image/png, image/jpeg"
-        class="upload-content"
-        list-type="picture-card"
       >
         <i slot="trigger" class="el-icon-plus"></i>
         <el-dialog
-          :visible.sync="dialogVisible"
           append-to-body
           title="查看大图"
+          :visible.sync="dialogVisible"
         >
           <div>
-            <img :src="dialogImageUrl" alt="" width="100%" />
+            <img alt="" :src="dialogImageUrl" width="100%" />
           </div>
         </el-dialog>
       </el-upload>
@@ -75,8 +75,6 @@
 </template>
 
 <script>
-  import { baseURL, tokenName } from '@/config'
-
   export default {
     name: 'VabUpload',
     props: {
@@ -207,12 +205,12 @@
         this.imgSuccessNum = 0
         this.imgErrorNum = 0
         /* if ("development" === process.env.NODE_ENV) {
-          this.api = process.env.VUE_APP_BASE_API;
-        } else {
-          this.api = `${window.location.protocol}//${window.location.host}`;
-        }
+        this.api = process.env.VUE_APP_BASE_API;
+      } else {
+        this.api = `${window.location.protocol}//${window.location.host}`;
+      }
 
-        this.action = this.api + this.url; */
+      this.action = this.api + this.url; */
         this.dialogFormVisible = false
       },
     },

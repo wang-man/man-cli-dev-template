@@ -5,15 +5,15 @@
     width="500px"
     @close="close"
   >
-    <el-form ref="form" :model="form" :rules="rules" label-width="80px">
+    <el-form ref="form" label-width="80px" :model="form" :rules="rules">
       <el-form-item label="用户名" prop="username">
         <el-input v-model.trim="form.username" autocomplete="off"></el-input>
       </el-form-item>
       <el-form-item label="密码" prop="password">
         <el-input
           v-model.trim="form.password"
-          type="password"
           autocomplete="off"
+          type="password"
         ></el-input>
       </el-form-item>
       <el-form-item label="邮箱" prop="email">
